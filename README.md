@@ -1,0 +1,1 @@
+[![Coverage Status](https://coveralls.io/repos/github/CCaco4/prova_mtss/badge.svg?branch=develop)](https://coveralls.io/github/CCaco4/prova_mtss?branch=develop)
