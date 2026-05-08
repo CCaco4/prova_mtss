@@ -13,11 +13,23 @@ public class RomanPrinter {
     
     private static String printAsciiArt(String romanNumber) {
         StringBuilder asciiArt = new StringBuilder();
+        
+        // Spezziamo l'array su più righe per rispettare il limite dei 100 caratteri
         String[][] asciiLetters = {
-                { " _____ ", "|_   _|", "  | |  ", "  | |  ", " _| |_ ", "|_____|" },
-                { "__      __", "\\ \\    / /", " \\ \\  / / ", "  \\ \\/ /  ", "   \\  /   ", "    \\/    " },
-                { "__   __", "\\ \\ / /", " \\ V / ", "  > <  ", " / . \\ ", "/_/ \\_\\" }
+                { 
+                    " _____ ", "|_   _|", "  | |  ", 
+                    "  | |  ", " _| |_ ", "|_____|" 
+                },
+                { 
+                    "__      __", "\\ \\    / /", " \\ \\  / / ", 
+                    "  \\ \\/ /  ", "   \\  /   ", "    \\/    " 
+                },
+                { 
+                    "__   __", "\\ \\ / /", " \\ V / ", 
+                    "  > <  ", " / . \\ ", "/_/ \\_\\" 
+                }
         };
+        
         String letters = "IVX";
         
         for (int row = 0; row < 6; row++) {
